@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnglishWordsBot", "EnglishWordsBot", "{A808DDE5-F508-418A-B755-8C86021CBFB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishWordsBot", "EnglishWordsBot\EnglishWordsBot\EnglishWordsBot.csproj", "{9B7ED971-3DBF-46FD-81BD-792692FE2953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B7ED971-3DBF-46FD-81BD-792692FE2953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7ED971-3DBF-46FD-81BD-792692FE2953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7ED971-3DBF-46FD-81BD-792692FE2953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7ED971-3DBF-46FD-81BD-792692FE2953}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B7ED971-3DBF-46FD-81BD-792692FE2953} = {A808DDE5-F508-418A-B755-8C86021CBFB4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11686817-3B1D-49A5-9BF9-72674B5D7F1C}
+	EndGlobalSection
+EndGlobal
