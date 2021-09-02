@@ -25,6 +25,9 @@ namespace EnglishWordsBot.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Level")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Meaning")
                         .HasColumnType("nvarchar(max)");
 

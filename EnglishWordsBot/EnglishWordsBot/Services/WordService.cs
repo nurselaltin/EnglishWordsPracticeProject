@@ -1,4 +1,5 @@
-﻿using EnglishWordsBot.Entities;
+﻿using EnglishWordsBot.DataAccess;
+using EnglishWordsBot.Entities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -17,10 +18,13 @@ namespace EnglishWordsBot.Services
 
         public string _url;
 
-        public WordService(string url)
+        public EnglishWordsBotContext _context { get; set; }
+
+        public WordService(string url, EnglishWordsBotContext context)
         {
             _driver = new ChromeDriver();
             _url = url;
+            _context = context;
         }
 
 
@@ -33,9 +37,12 @@ namespace EnglishWordsBot.Services
             Console.WriteLine("Siteye Gidildi!");
 
 
-            //Table - 1
+            IWebElement webElement = _driver.FindElement(By.XPath("/html/body/div[2]/div/div/section/div[2]/div/main/div/article/div/div[2]"));
 
-           IWebElement webElement = _driver.FindElement(By.XPath("/html/body/div[2]/div/div/section/div[2]/div/main/div/article/div/div[2]/table[1]"));
+
+            
+
+            IReadOnlyCollection<IWebElement> tables = webElement.FindElements(By.TagName("table"));
 
             IReadOnlyCollection<IWebElement> elements = webElement.FindElements(By.TagName("tr"));
 
@@ -49,12 +56,13 @@ namespace EnglishWordsBot.Services
                 foreach (var wordInfo in wordInfos)
                 {
 
+
                     switch (count)
                     {
                         case 1:
                             string name = wordInfo.Text.ToLower();
 
-                            if (name is not null)
+                            if (name != "")
                             {
                                 word.Name = name;
                                 Console.WriteLine("Name : " + word.Name);
@@ -66,7 +74,7 @@ namespace EnglishWordsBot.Services
                             string meaning = wordInfo.Text.ToLower();
 
 
-                            if (meaning is not null)
+                            if (meaning != "")
                             {
                                 word.Meaning = meaning;
                                 Console.WriteLine("Meaning : " + word.Meaning);
@@ -75,13 +83,19 @@ namespace EnglishWordsBot.Services
                             break;
                     }
 
-                
+                   
                     count += 1;
-                    
-                }
-
-               
                 
+
+                
+
+
+
+                }
+                
+                _context.Words.Add(word);
+                _context.SaveChanges();
+
                 Console.WriteLine("---------------------------------------------------------------------");
 
 
@@ -89,6 +103,9 @@ namespace EnglishWordsBot.Services
 
 
             Console.WriteLine("Table - 1 finished ---------------------------------------------------------------------");
+
+            
+
 
             _driver.Close();
 

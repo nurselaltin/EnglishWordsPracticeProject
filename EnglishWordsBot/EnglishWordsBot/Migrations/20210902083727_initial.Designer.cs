@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EnglishWordsBot.Migrations
 {
     [DbContext(typeof(EnglishWordsBotContext))]
-    [Migration("20210831210150_initial")]
+    [Migration("20210902083727_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,6 +26,9 @@ namespace EnglishWordsBot.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Level")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Meaning")
                         .HasColumnType("nvarchar(max)");
