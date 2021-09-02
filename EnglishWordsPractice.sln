@@ -5,7 +5,13 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnglishWordsBot", "EnglishWordsBot", "{A808DDE5-F508-418A-B755-8C86021CBFB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishWordsBot", "EnglishWordsBot\EnglishWordsBot\EnglishWordsBot.csproj", "{9B7ED971-3DBF-46FD-81BD-792692FE2953}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnglishWordsBot", "EnglishWordsBot\EnglishWordsBot\EnglishWordsBot.csproj", "{9B7ED971-3DBF-46FD-81BD-792692FE2953}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{708D421D-034E-4EA1-B1C5-24AB6B315715}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{A78C53B8-2D9A-41C3-B078-DA4D288835F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsPracticeConsole", "UI\Console\WordsPracticeConsole\WordsPracticeConsole.csproj", "{E316A11C-9480-4B28-AF96-65F5CE77F6ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +23,18 @@ Global
 		{9B7ED971-3DBF-46FD-81BD-792692FE2953}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B7ED971-3DBF-46FD-81BD-792692FE2953}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B7ED971-3DBF-46FD-81BD-792692FE2953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E316A11C-9480-4B28-AF96-65F5CE77F6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E316A11C-9480-4B28-AF96-65F5CE77F6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E316A11C-9480-4B28-AF96-65F5CE77F6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E316A11C-9480-4B28-AF96-65F5CE77F6ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9B7ED971-3DBF-46FD-81BD-792692FE2953} = {A808DDE5-F508-418A-B755-8C86021CBFB4}
+		{A78C53B8-2D9A-41C3-B078-DA4D288835F4} = {708D421D-034E-4EA1-B1C5-24AB6B315715}
+		{E316A11C-9480-4B28-AF96-65F5CE77F6ED} = {A78C53B8-2D9A-41C3-B078-DA4D288835F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11686817-3B1D-49A5-9BF9-72674B5D7F1C}
