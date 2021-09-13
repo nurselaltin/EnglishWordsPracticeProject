@@ -1,4 +1,4 @@
-﻿using EnglishWordsBot.DataAccess;
+﻿using DataAccess.Concrete;
 using EnglishWordsBot.Services;
 using System;
 
@@ -10,7 +10,7 @@ namespace EnglishWordsBot
         {
             Console.WriteLine("Hello World!");
 
-            WordService service = new WordService("https://www.english.web.tr/c1-level-word-list/", new  EnglishWordsBotContext());
+            WordService service = new WordService("https://www.english.web.tr/c1-level-word-list/", new  EnglishWordsPracticeContext());
             service.Handle();
         }
     }

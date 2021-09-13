@@ -2073,10 +2073,41 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DataAccess": "1.0.0",
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9"
+        },
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
+        }
+      },
       "EnglishWordsBot/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "DataAccess": "1.0.0",
+          "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
@@ -2088,6 +2119,16 @@
         },
         "runtime": {
           "bin/placeholder/EnglishWordsBot.dll": {}
+        }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
         }
       }
     }
@@ -7149,14 +7190,30 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../../../Business/Business/Business.csproj",
+      "msbuildProject": "../../../Business/Business/Business.csproj"
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../../../DataAccess/DataAccess/DataAccess.csproj",
+      "msbuildProject": "../../../DataAccess/DataAccess/DataAccess.csproj"
+    },
     "EnglishWordsBot/1.0.0": {
       "type": "project",
       "path": "../../../EnglishWordsBot/EnglishWordsBot/EnglishWordsBot.csproj",
       "msbuildProject": "../../../EnglishWordsBot/EnglishWordsBot/EnglishWordsBot.csproj"
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../../../Entities/Entities/Entities.csproj",
+      "msbuildProject": "../../../Entities/Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Business >= 1.0.0",
       "EnglishWordsBot >= 1.0.0"
     ]
   },
@@ -7194,6 +7251,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Nursel\\Desktop\\Software\\Projects\\C#\\Bot-ConsoleApp\\EnglishWordsPracticeProject\\Business\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\Nursel\\Desktop\\Software\\Projects\\C#\\Bot-ConsoleApp\\EnglishWordsPracticeProject\\Business\\Business\\Business.csproj"
+            },
             "C:\\Users\\Nursel\\Desktop\\Software\\Projects\\C#\\Bot-ConsoleApp\\EnglishWordsPracticeProject\\EnglishWordsBot\\EnglishWordsBot\\EnglishWordsBot.csproj": {
               "projectPath": "C:\\Users\\Nursel\\Desktop\\Software\\Projects\\C#\\Bot-ConsoleApp\\EnglishWordsPracticeProject\\EnglishWordsBot\\EnglishWordsBot\\EnglishWordsBot.csproj"
             }

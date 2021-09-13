@@ -1,5 +1,9 @@
-﻿using EnglishWordsBot.DataAccess;
-using EnglishWordsBot.Entities;
+﻿using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using System;
 using System.Threading;
 using WordsPracticeConsole.Services;
@@ -26,10 +30,11 @@ namespace WordsPracticeConsole
                 var result = Console.ReadLine();
 
 
+                IWordDal wordDal = new EfWordDal();
 
+                IWordService wordService = new WordManager(wordDal);
 
-
-                WordManager wordManager = new WordManager(new EnglishWordsBotContext());
+                WordService wordManager = new WordService(wordService);
 
 
                 switch (result.ToString())
@@ -41,6 +46,7 @@ namespace WordsPracticeConsole
                         Console.WriteLine("Name");
                         word.Name = Console.ReadLine().ToLower();
 
+                        
                         Console.WriteLine("Meaning");
 
                         word.Meaning = Console.ReadLine().ToLower();

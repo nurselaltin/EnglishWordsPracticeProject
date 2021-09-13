@@ -70,3 +70,9 @@ C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPractice
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\obj\Debug\net5.0\ref\WordsPracticeConsole.dll
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\obj\Debug\net5.0\WordsPracticeConsole.pdb
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\obj\Debug\net5.0\WordsPracticeConsole.genruntimeconfig.cache
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\bin\Debug\net5.0\Business.dll
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\bin\Debug\net5.0\DataAccess.dll
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\bin\Debug\net5.0\Entities.dll
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\bin\Debug\net5.0\Business.pdb
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\UI\Console\WordsPracticeConsole\bin\Debug\net5.0\Entities.pdb

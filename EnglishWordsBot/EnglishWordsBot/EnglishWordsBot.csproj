@@ -17,4 +17,9 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="92.0.4515.10700" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\..\Entities\Entities\Entities.csproj" />
+  </ItemGroup>
+
 </Project>

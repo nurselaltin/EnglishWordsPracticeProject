@@ -133,3 +133,7 @@ C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPractice
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordsBot\EnglishWordsBot\obj\Debug\net5.0\ref\EnglishWordsBot.dll
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordsBot\EnglishWordsBot\obj\Debug\net5.0\EnglishWordsBot.pdb
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordsBot\EnglishWordsBot\obj\Debug\net5.0\EnglishWordsBot.genruntimeconfig.cache
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordsBot\EnglishWordsBot\bin\Debug\net5.0\DataAccess.dll
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordsBot\EnglishWordsBot\bin\Debug\net5.0\Entities.dll
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordsBot\EnglishWordsBot\bin\Debug\net5.0\DataAccess.pdb
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordsBot\EnglishWordsBot\bin\Debug\net5.0\Entities.pdb

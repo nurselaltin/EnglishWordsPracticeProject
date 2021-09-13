@@ -1,5 +1,6 @@
-﻿using EnglishWordsBot.DataAccess;
-using EnglishWordsBot.Entities;
+﻿
+using DataAccess.Concrete;
+using Entities.Concrete;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -18,9 +19,9 @@ namespace EnglishWordsBot.Services
 
         public string _url;
 
-        public EnglishWordsBotContext _context { get; set; }
+        public EnglishWordsPracticeContext _context { get; set; }
 
-        public WordService(string url, EnglishWordsBotContext context)
+        public WordService(string url, EnglishWordsPracticeContext context)
         {
             _driver = new ChromeDriver();
             _url = url;
