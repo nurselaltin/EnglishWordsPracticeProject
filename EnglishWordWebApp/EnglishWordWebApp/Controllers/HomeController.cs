@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -25,5 +26,53 @@ namespace EnglishWordWebApp.Controllers
 
             return View(words);
         }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+
+            return View();
+
+        }
+
+        [HttpPost]
+        public IActionResult Add(Word word)
+        {
+
+            _wordService.Add(word);
+
+            return RedirectToAction("Index");
+
+        }
+
+        
+        public IActionResult UpdateView(int id)
+        {
+
+            var word = _wordService.Get(id);
+
+            return View(word);
+
+        }
+
+        public IActionResult Update(Word word)
+        {
+
+            _wordService.Update(word);
+
+            return RedirectToAction("Index");
+
+        }
+
+        public IActionResult Search(string name)
+        {
+
+            var word = _wordService.GetByName(name);
+
+            return View(word);
+
+        }
+
+
     }
 }

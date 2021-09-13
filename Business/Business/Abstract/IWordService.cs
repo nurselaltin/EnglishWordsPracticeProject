@@ -19,6 +19,8 @@ namespace Business.Abstract
 
         List<Word> GetByLevel(string level);
 
+        Word Get(int id);
+
 
     }
 }

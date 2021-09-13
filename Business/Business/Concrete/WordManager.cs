@@ -53,6 +53,9 @@ namespace Business.Concrete
 
         }
 
-      
+        public Word Get(int id)
+        {
+            return _wordDal.Get( x => x.Id == id);
+        }
     }
 }

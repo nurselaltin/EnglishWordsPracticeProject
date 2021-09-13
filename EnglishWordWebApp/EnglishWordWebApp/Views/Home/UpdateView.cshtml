@@ -1,0 +1,62 @@
+﻿@model Word
+@{
+    ViewData["Title"] = "UpdateView";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="section light-gray-bg">
+    <div class="container">
+
+
+        <h2>Update FORM  </h2>
+        <form role="form" method="post" asp-action="update">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputSuccess3">Name</label>
+                        <input type="text" class="form-control" id="inputSuccess3" asp-for="Id"  hidden>
+                        <input type="text" class="form-control" id="inputSuccess3" asp-for="Name" value="@Model.Name">
+                        <i class="fa fa-check form-control-feedback"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputSuccess3">Meaning</label>
+                        <input type="text" class="form-control" id="inputSuccess3" asp-for="Meaning" value="@Model.Meaning">
+                        <i class="fa fa-check form-control-feedback"></i>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputSuccess3">Level</label>
+                        <select class="form-control" asp-for="Level">
+                            <option>Select word level</option>
+                            @(Model.Level.ToLower() == "a1") ?  <option value="A1" selected>A1</option> : <option value="A1">A1</option>
+                            
+                            
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                            <option value="C1">C1</option>
+                            <option value="C2">C2</option>
+
+                        </select>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+
+    </div>
+</div>
+
