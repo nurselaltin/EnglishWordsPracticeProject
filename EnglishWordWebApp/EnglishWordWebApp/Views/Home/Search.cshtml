@@ -1,36 +1,42 @@
-﻿@model Word 
+﻿@model Word
 @{
     ViewData["Title"] = "Search";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-
 <br>
 <br>
-<h2 class="mt-4">@Model.Name.ToUpper()</h2>
+<h2 class="mt-4">SEARCH WORD</h2>
 <br>
-<div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Meaning</th>
-                <th>Level</th>
-                <th>Operations</th>
+<form class="form-inline pt-2" asp-action="Search" method="Post">
+    <label class="sr-only" for="inlineFormInput">Word</label>
+    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" asp-for="Name">
 
-            </tr>
-            <a asp-action="index" class="btn btn-success btn-secondary">Home</a>
-        </thead>
-        <tbody>
-            @{
-                int count = 1;
-                string format = "d  MMM yyyy";
+    <button type="submit" class="btn btn-default">Search</button>
+</form>
 
-            }
-           
+@if (Model != null)
+{
+
+    <br>
+    <br>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@count</td>
+
+                    <th>Name</th>
+                    <th>Meaning</th>
+                    <th>Level</th>
+                    <th>Operations</th>
+
+                </tr>
+                <a asp-action="add" class="btn btn-success btn-secondary">Add New</a>
+                <a asp-action="index" class="btn btn-success btn-secondary ml-3">Word List</a>
+            </thead>
+            <tbody>
+                <tr>
+
                     <td>@Model.Name</td>
                     <td>@Model.Meaning</td>
                     <td>@Model.Level</td>
@@ -41,15 +47,30 @@
                         <a href="Home/Remove/@Model.Id" class="btn btn-danger btn-sm">Remove</a>
                     </td>
                 </tr>
-              
-            
 
 
+            </tbody>
+        </table>
+    </div>
 
-        </tbody>
-    </table>
-</div>
+    <br>
 
-<br>
-<br>
+
+    <br>
+
+}
+
+@if (ViewBag.IsNull == false)
+{
+    <br>
+    <br>
+    <div class="table-responsive">
+        <div class="alert  alert-icon alert-danger" role="alert">
+            <i class="fa fa-times"></i>
+            Unfourtnetly , word is not exist.Click to <a asp-action="add">add new</a>
+        </div>
+    </div>
+    <br>
+    <br>
+}
 

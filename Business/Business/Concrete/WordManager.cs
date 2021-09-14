@@ -18,10 +18,17 @@ namespace Business.Concrete
             _wordDal = wordDal;
         }
 
-        public bool Add(Word word)
+        public bool Add(Word newWord)
         {
 
-           return _wordDal.Add(word);
+            var word = _wordDal.Get(x => x.Name.ToLower() == newWord.Name.ToLower());
+
+            if (word != null)
+            {
+                return false;
+            }
+
+           return _wordDal.Add(newWord);
         }
 
         public void Delete(int id)

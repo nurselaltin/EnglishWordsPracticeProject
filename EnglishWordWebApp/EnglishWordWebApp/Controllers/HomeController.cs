@@ -39,7 +39,13 @@ namespace EnglishWordWebApp.Controllers
         public IActionResult Add(Word word)
         {
 
-            _wordService.Add(word);
+           var result =  _wordService.Add(word);
+
+            if (!result)
+            {
+                //ViewBag.IsExist = true;
+                return View();
+            }
 
             return RedirectToAction("Index");
 
@@ -64,10 +70,24 @@ namespace EnglishWordWebApp.Controllers
 
         }
 
+        public IActionResult Search()
+        {
+
+          
+            return View();
+
+        }
+
+        [HttpPost]
         public IActionResult Search(string name)
         {
 
             var word = _wordService.GetByName(name);
+
+            if(word == null)
+            {
+                ViewBag.IsNull = false;
+            }
 
             return View(word);
 
