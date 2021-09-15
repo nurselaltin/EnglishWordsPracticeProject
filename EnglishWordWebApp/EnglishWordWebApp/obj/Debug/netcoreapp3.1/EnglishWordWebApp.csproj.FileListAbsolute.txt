@@ -152,3 +152,4 @@ C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPractice
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordWebApp\EnglishWordWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Add.cshtml.g.cs
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordWebApp\EnglishWordWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\UpdateView.cshtml.g.cs
 C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordWebApp\EnglishWordWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Search.cshtml.g.cs
+C:\Users\Nursel\Desktop\Software\Projects\C#\Bot-ConsoleApp\EnglishWordsPracticeProject\EnglishWordWebApp\EnglishWordWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\FilterData.cshtml.g.cs

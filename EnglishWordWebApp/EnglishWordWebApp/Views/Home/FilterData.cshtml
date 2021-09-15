@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "FilterData";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+@model Word
+
+
+
+
+
+<div class="section light-gray-bg">
+    <div class="container">
+
+
+        <h2>FilterData </h2>
+        <form role="form" method="post" asp-action="index">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label" for="inputSuccess3">Level</label>
+                        <select class="form-control" asp-for="Level">
+                            <option>Select word level</option>
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                            <option value="C1">C1</option>
+                            <option value="C2">C2</option>
+
+                        </select>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+

@@ -18,14 +18,27 @@ namespace EnglishWordWebApp.Controllers
             _wordService = wordService;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
 
             var words = _wordService.GetAll();
 
+            return View(words);
+        }
+
+        [HttpPost]
+        public IActionResult Index(Word word)
+        {
+
+           
+
+            var words = _wordService.GetByLevel(word.Level);
 
             return View(words);
         }
+
+
 
         [HttpGet]
         public IActionResult Add()
@@ -92,6 +105,23 @@ namespace EnglishWordWebApp.Controllers
             return View(word);
 
         }
+
+
+        public IActionResult FilterData()
+        {
+
+            return View();
+        }
+
+    
+
+    
+
+    
+
+
+
+
 
 
     }

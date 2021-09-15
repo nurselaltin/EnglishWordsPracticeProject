@@ -15,5 +15,7 @@ namespace Entities.Concrete
 
         public string Level { get; set; }
 
+   
+
     }
 }
